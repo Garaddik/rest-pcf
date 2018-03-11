@@ -1,0 +1,10 @@
+---
+applications:
+- name: articleapp2
+  memory: 1024M
+  instances: 1
+  path: target/article-1.jar
+  buildpack: java_buildpack
+  disk_quota: 1024M
+  routes:
+  - route: articlesapp1.cfapps.io/articles/articles
